@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+</head>
+<body>
+    <!-- MENU -->
+
+<div class="main-menu">
+        
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="">Design app</a> </li>
+        
+        <div class="avatar-box">
+            <img id="avatar-account" class="main-avatar" src="https://cdns.iconmonstr.com/wp-content/releases/preview/2012/240/iconmonstr-user-19.png" alt="">
+            <img id="arrow-down" src="https://cdns.iconmonstr.com/wp-content/releases/preview/7.2.0/240/iconmonstr-caret-down-circle-lined.png" alt="" class="arrow-down">
+            
+            <div id="account-status" class="account-status">
+                <a class="account-info" id="login" href="login.html"></a>
+                <a class="account-info" id="register" href="register.html"></a>
+
+            </div>
+        </div>
+
+        <li class="cart"><a href=""><i class="fa fa-shopping-cart"></i>
+            <span></span></a> </li>
+
+    </ul>
+   
+
+</div>
+
+
+    <!-- REGISTER  -->
+    <div class="register-container">
+        <div class="register-background">
+            <div class="register-box">
+            <h2 class="register-p">Register</h2>
+                <input class="input" id="username" type="text" class="" placeholder="Username">
+                <input class="input" id="password" type="password" class="" placeholder="Password"  > 
+                <input class="input" id="confirm-password" type="password" class="" placeholder="Confirm password">
+                <div class="checkbox-box">
+                    <input class="checkbox" type="checkbox">
+                    <p class="checkbox-p">
+                        I argee with the <b>Terms and Conditions</b> and the <b>Privacy Policy</b>
+                    </p>
+                </div>
+                <button id="btn">Register</button>
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script src="register.js"></script>
+</html>
