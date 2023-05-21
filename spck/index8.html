@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="index8.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+</head>
+<body>
+   <!-- MENU -->
+
+<div class="main-menu">
+        
+  <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="">Design app</a> </li>
+      
+      <div class="avatar-box">
+          <img id="avatar-account" class="main-avatar" src="https://cdns.iconmonstr.com/wp-content/releases/preview/2012/240/iconmonstr-user-19.png" alt="">
+          
+          
+          <div id="account-status" class="account-status">
+              
+
+          </div>
+      </div>
+
+      <li class="cart"><a href=""><i class="fa fa-shopping-cart"></i>
+          <span></span></a> </li>
+
+  </ul>
+ 
+
+</div>
+
+    <div id="app"></div>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyAzxgO1Ic7NaPlBNxYf82sL43Qi-EJsaKo",
+          authDomain: "signin-firebase-48dd9.firebaseapp.com",
+          databaseURL: "https://signin-firebase-48dd9-default-rtdb.asia-southeast1.firebasedatabase.app",
+          projectId: "signin-firebase-48dd9",
+          storageBucket: "signin-firebase-48dd9.appspot.com",
+          messagingSenderId: "438435219401",
+          appId: "1:438435219401:web:2d493bd8efdfee7be3ca18",
+          measurementId: "G-THYWGLPM92"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+
+
+      <script src="./register.js  " type="module"></script>
+</body>
+</html>
