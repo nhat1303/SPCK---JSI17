@@ -1,0 +1,17 @@
+.img-box {
+    border: 1px dotted white;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    min-width: 1em;
+    min-height: 1em;
+    max-height: 300px;
+    max-width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 60%;
+    background-color: transparent;
+    color: white;
+    
+}
