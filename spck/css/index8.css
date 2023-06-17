@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#app{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    
+}
+.center{
+    width: 300px;
+    text-align: center;
+    
+}
+.centering{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+input{
+    height: 30px;
+    margin-top: 20px;
+    padding-left: 5px;
+    background-color: rgb(80, 79, 79);
+    border: none;
+    border-radius: 5px;
+    color: WHITE;
+}
+a{
+    color: blue;
+}
+button{
+    height: 30px;
+    margin-top: 20px;
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    transition: ease-in-out 0.3s;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(252, 98, 98);
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+a:hover{
+    cursor: pointer;
+    
+}
+
+
+/* MENU  */
+/* MENU  */
+
+.main-menu {
+    background: white;
+    text-align: center;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: fixed;
+}
+
+.main-menu-img {
+    margin-top: 85px;
+}
+
+.main-menu ul {
+    display: inline-flex;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+.main-menu ul li {
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: 24px;
+    padding-bottom: 30px;
+
+}
+
+.main-menu ul li a {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 10px;
+
+}
+
+.main-menu ul li a:hover {
+    border-bottom: 4px solid black;
+
+
+}
+
+.main-menu-img {
+    width: 100%;
+    position: relative;
+}
+
+.main-avatar {
+    width: 40px;
+    height: 40px;
+    margin-top: 25px;
+}
+.main-avatar:hover{
+    cursor: pointer;
+}
+.avatar-box {
+    display: flex;
+    
+}
+
+#account {
+    margin-left: 10px;
+    border: none;
+    background-color: transparent;
+
+}
+
+#log-out {
+    margin-left: 15px;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    left: 90%;
+    top: 20%;
+    display: none;
+}
+
+#log-out:hover {
+    cursor: pointer;
+}
+
+.main-img {
+    width: 100%;
+    margin-top: 80px;
+}
+
+
+.arrow-down{
+    width: 20px;
+    height: 20px;
+    margin-top: 35px;
+    margin-left: 5px;
+
+}
+.arrow-down:hover{
+    cursor: pointer;
+}
+.account-status{
+    position: fixed;
+    right: 30%;
+    top: 10%;
+    background-color: white;
+    width: 100px;
+    height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
+    flex-direction: column;
+
+}
+
+/* FOOTER  */
+
+.footer{
+    margin-top: 200px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    align-items: center;
+}
+
+.main-footer{
+    width: 100%;
+}
+
+.icon{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    font-size: 50px;
+    color: white;
+
+}
+
+.footer-link{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    
+}
+
+.footer-link a{
+    text-decoration: none;
+    color: white;
+}
