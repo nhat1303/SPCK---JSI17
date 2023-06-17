@@ -426,3 +426,17 @@ button:hover {
     text-decoration: none;
     color: white;
 }
+
+
+/* SLIDER  */
+
+
+.slider-frame{
+
+
+    margin-top: 80px;
+}
+.slide-images img{
+    width:1300px ;
+}
+/*---------- SLIDE ANIMATION --------------*/
