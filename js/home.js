@@ -69,4 +69,4 @@ const deleteDatabyId = async (db, id) => {
 
 // test 
 
-await deleteDatabyId(firebaseDatabase, "dkgh;asghas;")
+// await deleteDatabyId(firebaseDatabase, "dkgh;asghas;")
