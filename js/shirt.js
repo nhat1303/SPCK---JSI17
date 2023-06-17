@@ -178,10 +178,11 @@ L.value=0
 
 btn.addEventListener("click", function(e){
     e.preventDefault()
-    cost= S.value*150000 + M.value*150000 + XL.value*150000 + L.value*150000
-    console.log(cost)
-    document.getElementById("price").innerHTML=cost
+    cost= S.value*500 + M.value*500 + XL.value*500 + L.value*500
+    console.log("$"+cost)
+    document.getElementById("price").innerHTML="$"+cost
 })
+
 
 
 
@@ -747,6 +748,11 @@ window.onload = function() {
 
 
 
-// TEST 
+let addCart = document.getElementById("buy-btn")
+addCart.addEventListener("click", function(){
+    if ( S.value ==0 && M.value==0 && XL.value==0 && L.value==0){
+        alert("Cần nhập số lượng")
+    }
+})
 
 

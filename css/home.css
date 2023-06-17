@@ -90,10 +90,7 @@
     cursor: pointer;
 }
 
-.main-img {
-    width: 100%;
-    margin-top: 80px;
-}
+
 
 
 .arrow-down{
@@ -428,15 +425,30 @@ button:hover {
 }
 
 
-/* SLIDER  */
 
+/* SLIDER */
 
-.slider-frame{
-
-
+.main-img1 {
+    width: 100%;
     margin-top: 80px;
 }
-.slide-images img{
-    width:1300px ;
+.main-img2{
+    width: 100%;
+    position: absolute;
+    margin-top: 80px;
+    left: 0;
+    animation: fadeinout 8s infinite alternate;
 }
-/*---------- SLIDE ANIMATION --------------*/
+.main-img-box{
+    width: 100%;
+    position: relative;
+}
+
+@keyframes fadeinout {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

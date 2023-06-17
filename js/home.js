@@ -27,7 +27,7 @@ productContainers.forEach((item, i) => {
 
 
 document.getElementById("avatar-account").addEventListener('click', function(){
-    window.location.href = "index8.html";
+    window.location.href = "../html/index8.html";
 })
 
 // get data from list 
