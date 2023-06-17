@@ -12,6 +12,8 @@ class Register{
     $confirmPassInputPass
     $submitBtn
     $gotoSigninLink
+    $user
+
 
     constructor(){
         this.$emailInputEmail = document.createElement("input")
@@ -86,7 +88,7 @@ class Register{
         return;
       }
       if ( confirmpass ==""){
-        alert("Confirmpassword required");
+        alert("Confirm password required");
         return;
       }
       if ( userName ==""){
@@ -97,13 +99,16 @@ class Register{
         alert("Wrong confirm password")
         return;
       }
-      this.setError()
+      
         const auth = getAuth();
         createUserWithEmailAndPassword(auth, email, password)
           .then((userCredential) => {
             // Signed in 
-            console.log(user)
-            const user = userCredential.user;
+
+            
+            this.$user = userCredential.user;
+            // window.location.href = "./index8.html"
+            this.gotoSignin()
             // ...
           })
           .catch((error) => {
@@ -112,7 +117,12 @@ class Register{
             const alert = prompt(errorMessage)
             // ..
           });
+          console.log(this.getUser())
     }
+    getUser = () => {
+      return this.$user;
+    }
+    
     gotoSignin = () =>{
         const login = new Login();
         //change active section

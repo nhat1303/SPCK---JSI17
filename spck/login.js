@@ -11,7 +11,7 @@ class Login{
     $passInputPass
     $submitBtn
     $gotoSignupLink
-
+    $user
 
     constructor(){
         this.$emailInputEmail = document.createElement("input")
@@ -75,14 +75,21 @@ class Login{
         signInWithEmailAndPassword(auth, email, password)
           .then((userCredential) => {
             // Signed in 
-            const user = userCredential.user;
+            this.$user = userCredential.user;
+            console.log(this.getUser())
             // ...
           })
           .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
           });
+          console.log(this.getUser())
+
     }
+    getUser = () => {
+      return this.$user;
+    }
+    
     gotoSignup = () =>{
         const signup = new Register();
         //change active section

@@ -176,7 +176,7 @@ L.value=0
 
 btn.addEventListener("click", function(e){
     e.preventDefault()
-    cost= S.value*150000 + M.value*150000 + XL.value*180000 + L.value*180000
+    cost= S.value*150000 + M.value*150000 + XL.value*150000 + L.value*150000
     console.log(cost)
     document.getElementById("price").innerHTML=cost
 })
@@ -541,7 +541,7 @@ document.getElementById("offf-btn").addEventListener("click", function(){
 // RESET BTN 
 
 document.getElementById("reset").addEventListener("click", function(){
-    alert("Toàn bộ dữ liệu sẽ bị xoá, bạn chắc chứ ?")
+    confirm("Toàn bộ dữ liệu sẽ bị xoá, bạn chắc chứ ?")
     window.location.reload()
 })
 
@@ -742,3 +742,17 @@ window.onload = function() {
         shirt7.style.zIndex="99"
     }
 })
+
+
+
+// TEST 
+
+fuck = document.getElementById("quantity-element")
+document.getElementById("buy-btn").addEventListener("click", function(e){
+    e.preventDefault()
+    if (S.value >0){
+        fuck.innerHTML=S.value
+    }
+})
+
+
